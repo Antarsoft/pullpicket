@@ -2,7 +2,7 @@
 # Metrics API image: static Go binary on distroless, running as a non-root user.
 # Base images are pinned by digest so builds are reproducible; Dependabot keeps the pins current.
 
-FROM golang:1.27-alpine@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb AS build
+FROM golang:1.27-alpine@sha256:eb61c3873c97416fff0116553fff65d67a3549f72e11d9758849a689cdd8b523 AS build
 WORKDIR /src
 
 # Dependencies first so this layer is cached until go.mod or go.sum change.
